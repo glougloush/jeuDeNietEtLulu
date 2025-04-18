@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styleChat.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Jeu de Niet et Lulu </title>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="game-container">
+            <h1> Jeu de Niet et Lulu </h1>
+            <div id="cat-container">
+                <img id="cat-img" src="cat1.jpg" alt="niet"/>
+                <div id="cat-status">
+                    <h2 id="cat-name"> Niet </h2>
+                    <p id="cat-mood">Mood : Mignon</p>
+                    <p id="cat-Energy"> Energie : 100% </p>
+                </div>
+            </div>
+        <div id="message"></div>
+        <div id="controls">
+            <button class="button" onclick="feedCat()"> Nourrir </button>
+            <button class="button" onclick="petCat()">Carresser</button>
+            <button class="button" onclick="playWithCat()">Jouer</button>
+            <button class="button" onclick="sleepCat()">Dormir</button>
+            <button class="button" onclick="changeCat()">Changer de chat</button>
+        </div>
+        <div class="deco-buttons">
+            <div class="deco-button"></div>
+            <div class="deco-button"></div>
+            <div class="deco-button"></div>
+        </div>
+        </div>
+        <script src="scriptChat.js"></script>
+    </body>
+    </html>
