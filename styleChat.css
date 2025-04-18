@@ -1,115 +1,58 @@
-/* RESET DE BASE */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* BODY GLOBAL */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #e3edf7, #c5d6e7);
-    color: #2d2d2d;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px 20px;
-}
-
-/* CONTAINER FORMULAIRE */
-.container {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px; /* ✅ Limite la largeur même sur très grands écrans */
-    margin: 0 auto;    /* ✅ Centre horizontalement */
-    transition: all 0.3s ease;
-}
-
-/* TITRE */
-h1 {
-    font-size: 2.4em;
-    margin-bottom: 30px;
-    color: #2c3e50;
-    text-align: center;
-}
-
-/* LABELS ET INPUTS */
-label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 8px;
-    margin-top: 20px;
-    color: #34495e;
-}
-
-input[type="text"],
-input[type="email"],
-textarea,
-select {
-    width: 100%;
-    padding: 12px 15px;
-    font-size: 1em;
-    border: 1px solid #ccd6dd;
-    border-radius: 8px;
-    background-color: #f9fbfd;
-    transition: border 0.3s ease;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-    border-color: #5dade2;
-    outline: none;
-}
-
-/* TEXTAREA */
-textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-/* BOUTON */
-button {
-    margin-top: 30px;
-    background-color: #3498db;
-    color: #fff;
-    padding: 14px 25px;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-    background-color: #2980b9;
-    transform: scale(1.03);
-}
-
-/* FOOTER OU MENTION */
-footer {
-    margin-top: 40px;
-    font-size: 0.9em;
-    text-align: center;
-    color: #7f8c8d;
-}
-
-/* MEDIA QUERY POUR PETITS ÉCRANS */
-@media (max-width: 600px) {
-    .container {
-        padding: 25px;
+/* Responsive Design for Tablets and Phones */
+@media only screen and (max-width: 768px) {
+    #game-container {
+        width: 90%;
+        left: 5%;
+        padding: 30px;
+        margin: 30px auto;
+        position: relative;
     }
 
     h1 {
-        font-size: 1.8em;
+        font-size: 1.3em;
+        transform: rotate(0deg);
+        margin-bottom: 20px;
     }
 
-    button {
+    #cat-img {
         width: 100%;
-        padding: 14px;
+        max-width: 180px;
+    }
+
+    #controls {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+        gap: 10px;
+    }
+
+    #controls button:last-child {
+        grid-column: auto;
+    }
+
+    .button {
+        font-size: 1.2em;
+        padding: 12px;
+    }
+
+    #cat-name {
+        font-size: 1.6em;
+    }
+
+    #cat-mood, #cat-energy {
+        font-size: 1.3em;
+    }
+
+    #message {
+        font-size: 1.2em;
+        padding-top: 20px;
+    }
+
+    .deco-buttons {
+        gap: 15px;
+    }
+
+    .deco-button {
+        width: 12px;
+        height: 12px;
     }
 }
