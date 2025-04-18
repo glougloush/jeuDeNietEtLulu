@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="form.css">
+        <title> Formulaire </title>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header><h1> Digitalisez vos animaux de compagnie! </h1> </header>
+        <main>
+        <form action="form.php" method="POST">
+            <label for="avezVous"> Possédez-vous un animal de compagnie ? </label>
+            <label for="oui"> Oui </label>
+            <input type="radio" id="oui" name="avezVous" value="oui">
+            <label for="non"> Non </label>
+            <input type="radio" id="non" name="avezVous" value="non">
+            <br>
+            <label for="cb"> Si oui, combien ? </label>
+            <input type="number" id="cb" name="cb">
+            <label for="noms"> Comment s'appellent-ils? Entrez les noms séparés par des virgules </label>
+            <input type ="text" id="noms" name="noms">
+            <label for="espèce"> Quelle espèce? </label>
+            <select name="espèce" type="espèce">
+                <option name="espèce" value="chat">Chat</option>
+                <option name="espèce" value="chien">Chien</option>
+                <option name="espèce" value="reptile">Reptile</option>
+                <option name="poisson" value="poisson">Poisson</option>
+            </select>
+            <input type="submit" value="Je veux mon animal numérique!">
+        </form>
+    </main>
+    <footer>
+        <h6> Société de digitalisation des animaux </h6>
+    </body>
+</html>
+
+            
