@@ -24,7 +24,8 @@ body {
     border-radius: 12px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 700px;
+    max-width: 600px; /* ✅ Limite la largeur même sur très grands écrans */
+    margin: 0 auto;    /* ✅ Centre horizontalement */
     transition: all 0.3s ease;
 }
 
